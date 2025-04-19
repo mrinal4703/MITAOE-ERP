@@ -1,0 +1,47 @@
+[
+    {
+      "time": "8:30 AM - 9:25 AM",
+      "days": ["     ", "PROJECT", "GUEST TALK SESSION", "GUEST TALK SESSION", "", "B1-HCI LAB & B2-HCI LAB"]
+    },
+    {
+      "time": "9:25 AM - 10:20 AM",
+      "days": ["      ", "HCI (ASC) PPL", "GUEST TALK SESSION", "GUEST TALK SESSION", "Project Common Instructions", "B1-HCI LAB & B2-HCI LAB"]
+    },
+    {
+      "time": "10:20 AM - 10:30 ",
+      "days": ["        ", "      ", "SHORT", "BREAK", "       ", "      "]
+    },
+    {
+      "time": "10:30 PM - 11:25 PM",
+      "days": ["", "", "Library Hours", "Library Hours", "HCI (*S) PPL", "B3-HCI LAB & B4-HCI LAB"]
+    },
+    {
+      "time": "11:25 PM - 12:20 PM",
+      "days": ["       ", "", "Library Hours", "Library Hours", "HCI (*S) PPL", "B3-HCI LAB & B4-HCI LAB"]
+    },
+    {
+      "time": "12:20 PM - 1:15 PM",
+      "days": ["", "", "LUNCH", "BREAK", "", ""]
+    },
+    {
+        "time": "1:15 PM - 2:10 PM",
+        "days": ["", "PROJECT", "Make-up Session", "EE (*S) PNS", "", "PROJECT"]
+      },
+      {
+        "time": "2:10 PM - 3:05 PM",
+        "days": ["", "PROJECT", "Make-up Session", "EE (*S) PNS", "", "PROJECT"]
+      },
+      {
+        "time": "3:05 PM - 3:10 PM",
+        "days": ["", "", "SHORT", "BREAK", "", ""]
+      },
+      {
+        "time": "3:10 PM - 4:00 PM",
+        "days": ["", "SPORTS SESSION", "SPORTS SESSION", "SPORTS SESSION", "PSY (*S) HS", "PROJECT"]
+      },
+      {
+        "time": "4:00 PM - 4:50 PM",
+        "days": ["", "SPORTS SESSION", "SPORTS SESSION", "SPORTS SESSION", "PSY (*S) HS", "PROJECT"]
+      }
+  ]
+  

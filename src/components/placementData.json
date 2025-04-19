@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "company": "TCS",
+      "date": "2025-04-15",
+      "salary": "6 LPA",
+      "eligibility": "No active backlogs",
+      "degree": "B.Tech - CSE, IT",
+      "description": "TCS is conducting a campus recruitment drive with online test, technical, and HR interview rounds."
+    },
+    {
+      "id": 2,
+      "company": "Infosys",
+      "date": "2025-04-20",
+      "salary": "5.5 LPA",
+      "eligibility": "60% minimum in academics",
+      "degree": "B.Tech - All Branches",
+      "description": "Infosys hiring for System Engineer role. Selection process includes aptitude test and interview rounds."
+    }
+  ]
+  

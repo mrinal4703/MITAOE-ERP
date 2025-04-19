@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Placement Drive by TCS",
+    "description": "A placement drive will be conducted by TCS on 10th April.",
+    "status": "active",
+    "date": "2025-04-06"
+  },
+  {
+    "id": 2,
+    "title": "Exam Form Submission",
+    "description": "Last date for form submission is 5th April.",
+    "status": "old",
+    "date": "2025-04-01"
+  },
+  {
+    "id": 3,
+    "title": "Library Book Return Reminder",
+    "description": "Students are requested to return all borrowed library books before 12th April.",
+    "status": "active",
+    "date": "2025-04-07"
+  },
+  {
+    "id": 4,
+    "title": "Holiday Announcement",
+    "description": "The campus will remain closed on 14th April due to Ambedkar Jayanti.",
+    "status": "old",
+    "date": "2025-03-30"
+  }
+]
