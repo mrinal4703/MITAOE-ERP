@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import StudentResultContainer from './StudentResultContainer';
+import StudentResultContainer from './ResultDetails/StudentResultContainer';
 
 const DashboardLayout = () => {
   return (

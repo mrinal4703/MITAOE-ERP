@@ -1,7 +1,7 @@
 import React from 'react'
 import StudentInfoCard from './StudentInfoCard';
 
-function FeesDetailsContainer() {
+function FeesDetailsContainer({navbarColor = "#5864bd"}) {
     const feesData = [
       {
         year: 'Second Year',
@@ -67,7 +67,7 @@ function FeesDetailsContainer() {
   
     return (
       <div className="bg-white p-4 rounded-xl mb-6">
-        <h3 className="text-lg font-semibold mb-4">Fees Details</h3>
+        <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>Fees Details</h3>
   
         {/* Table Header */}
         <div className="grid grid-cols-[1.2fr_1fr_2fr_1.5fr_2fr_2fr_1.7fr_1.7fr_1.7fr_1.7fr] text-xs font-semibold text-gray-700 border-b mb-2">
@@ -94,7 +94,7 @@ function FeesDetailsContainer() {
               <div>{item.semester}</div>
               <div>{item.branch}</div>
               <div>{item.type}</div>
-              <div className="text-blue-600 underline cursor-pointer">{item.receiptNo}</div>
+              <div className="underline cursor-pointer" style={{color: navbarColor}}>{item.receiptNo}</div>
               <div>{item.receiptDate}</div>
               <div>{item.applied.toFixed(2)}</div>
               <div>{item.paid.toFixed(2)}</div>
@@ -108,11 +108,11 @@ function FeesDetailsContainer() {
   };
 
 
-function FeesDetails(){
+function FeesDetails({navbarColor = "#5864bd"}){
     return (
         <div className="max-w-[1200px] bg-white rounded-xl shadow-xl overflow-hidden font-sans">
           <StudentInfoCard />
-          <FeesDetailsContainer />
+          <FeesDetailsContainer navbarColor={navbarColor} />
         </div>
       );
 }

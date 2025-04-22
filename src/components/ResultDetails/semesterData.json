@@ -1,0 +1,174 @@
+{
+  "I": {
+    "summary": {
+      "session": "ODD 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 21.00,
+      "earnedCredits": 21.00,
+      "sgpa": 	9.52,
+      "cgpa": 9.52,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "AS105L", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS105T", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS101L", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS101T", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "BB", "gradePoint": 8.00, "earnedGradePoint": 8.00, "result": "PASS" },
+      { "code": "EX102L", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "EX102T", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "ME105L", "subject": "EXPERIMENTAL TOOLS AND TECHNIQUES", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 18.00, "result": "PASS" },
+      { "code": "ME104L", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "ME104T", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Theory",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106L", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106T", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" }
+    ]
+  },
+  "II": {
+    "summary": {
+      "session": "EVEN 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 19.00,
+      "earnedCredits": 19.00,
+      "sgpa": 9.47,
+      "cgpa": 9.5,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "CV102L", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CV102T", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CH101L", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CH101T", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "HP103L", "subject": "English For Engineers", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "ME106L", "subject": "Design Thinking", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "AS107L", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS107T", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS102L", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS102T", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 9.00, "result": "PASS" }
+    ]
+  },
+  "III": {
+    "summary": {
+      "session": "ODD 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 21.00,
+      "earnedCredits": 21.00,
+      "sgpa": 	9.52,
+      "cgpa": 9.52,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "AS105L", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS105T", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS101L", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS101T", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "BB", "gradePoint": 8.00, "earnedGradePoint": 8.00, "result": "PASS" },
+      { "code": "EX102L", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "EX102T", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "ME105L", "subject": "EXPERIMENTAL TOOLS AND TECHNIQUES", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 18.00, "result": "PASS" },
+      { "code": "ME104L", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "ME104T", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Theory",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106L", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106T", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" }
+    ]
+  },
+  "IV": {
+    "summary": {
+      "session": "EVEN 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 19.00,
+      "earnedCredits": 19.00,
+      "sgpa": 9.47,
+      "cgpa": 9.5,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "CV102L", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CV102T", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CH101L", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CH101T", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "HP103L", "subject": "English For Engineers", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "ME106L", "subject": "Design Thinking", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "AS107L", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS107T", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS102L", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS102T", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 9.00, "result": "PASS" }
+    ]
+  },
+  "V": {
+    "summary": {
+      "session": "ODD 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 21.00,
+      "earnedCredits": 21.00,
+      "sgpa": 	9.52,
+      "cgpa": 9.52,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "AS105L", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS105T", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS101L", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS101T", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "BB", "gradePoint": 8.00, "earnedGradePoint": 8.00, "result": "PASS" },
+      { "code": "EX102L", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "EX102T", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "ME105L", "subject": "EXPERIMENTAL TOOLS AND TECHNIQUES", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 18.00, "result": "PASS" },
+      { "code": "ME104L", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "ME104T", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Theory",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106L", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106T", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" }
+    ]
+  },
+  "VI": {
+    "summary": {
+      "session": "EVEN 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 19.00,
+      "earnedCredits": 19.00,
+      "sgpa": 9.47,
+      "cgpa": 9.5,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "CV102L", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CV102T", "subject": "Applied Mechanics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CH101L", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "CH101T", "subject": "Science of Nature", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "HP103L", "subject": "English For Engineers", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "ME106L", "subject": "Design Thinking", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "AS107L", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS107T", "subject": "Statistics & Integral Calculus", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS102L", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS102T", "subject": "Applications Programming- Python", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 9.00, "result": "PASS" }
+    ]
+  },
+  "VII": {
+    "summary": {
+      "session": "ODD 21-22",
+      "section": "B",
+      "registeredCourses": 11,
+      "registeredCredits": 21.00,
+      "earnedCredits": 21.00,
+      "sgpa": 	9.52,
+      "cgpa": 9.52,
+      "resultDate": "12 Jul 2023"
+    },
+    "details": [
+      { "code": "AS105L", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS105T", "subject": "CALCULUS AND DIFFERENTIAL EQUATIONS", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "CS101L", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 20.00, "result": "PASS" },
+      { "code": "CS101T", "subject": "LOGIC DEVELOPMENT - C PROGRAMMING", "examType": "REGULAR", "courseType": "Theory",  "credits": 1.00, "grade": "BB", "gradePoint": 8.00, "earnedGradePoint": 8.00, "result": "PASS" },
+      { "code": "EX102L", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "EX102T", "subject": "ELECTRICAL AND ELECTRONICS ENGINEERING", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 27.00, "result": "PASS" },
+      { "code": "ME105L", "subject": "EXPERIMENTAL TOOLS AND TECHNIQUES", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AB", "gradePoint": 9.00, "earnedGradePoint": 18.00, "result": "PASS" },
+      { "code": "ME104L", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Practical",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "ME104T", "subject": "Engineering Graphics", "examType": "REGULAR", "courseType": "Theory",  "credits": 2.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106L", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Practical",  "credits": 1.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" },
+      { "code": "AS106T", "subject": "Engineering Physics", "examType": "REGULAR", "courseType": "Theory",  "credits": 3.00, "grade": "AA", "gradePoint": 10.00, "earnedGradePoint": 10.00, "result": "PASS" }
+    ]
+  }
+}

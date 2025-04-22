@@ -1,0 +1,38 @@
+{
+  "theory": [
+    {
+      "course": "HCI",
+      "assignment": "Graded Theory Assignment 2",
+      "dueDate": "Friday, 18 April 2025, 11:59 PM",
+      "link": "http://moodle.mitaoe.ac.in/mod/assign/view.php?id=100556"
+    },
+    {
+      "course": "HCI",
+      "assignment": "Activity 2 - Brainstorming Activity",
+      "dueDate": "Sunday, 20 April 2025, 11:59 PM",
+      "link": "http://moodle.mitaoe.ac.in/mod/assign/view.php?id=100654"
+    }
+  ],
+  "practical": [
+    {
+      "course": "HCI",
+      "assignment": "Practical No. 5",
+      "dueDate": "Thursday, 24 April 2025, 11:59 PM",
+      "link": "http://moodle.mitaoe.ac.in/mod/assign/view.php?id=101374"
+    },
+    {
+      "course": "Capstone",
+      "assignment": "Grade Book Submission",
+      "dueDate": "Saturday, 26 April 2025, 11:59 PM\n",
+      "link": "http://moodle.mitaoe.ac.in/mod/assign/view.php?id=94792"
+    }
+  ],
+  "quiz": [
+    {
+      "course": "Economics",
+      "assignment": "Activity - 3",
+      "dueDate": "Thursday, 17 April 2025, 11:59 PM",
+      "link": "http://moodle.mitaoe.ac.in/mod/quiz/view.php?id=100630"
+    }
+  ]
+}

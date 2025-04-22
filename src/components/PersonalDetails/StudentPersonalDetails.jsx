@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StudentPersonalDetails = () => {
+const StudentPersonalDetails = ({navbarColor = "#5864bd"}) => {
   const data = [
     ['Enrollment Number', 'ENR2025001'],
     ['Registration No.', 'REG2025A123'],
@@ -36,15 +36,14 @@ const StudentPersonalDetails = () => {
 
   return (
     <div className="bg-white p-6 rounded-xl mb-6">
-      <h3 className="text-lg font-semibold mb-4 border-l-4 border-blue-600 pl-2">Student Personal Details</h3>
+      <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>Student Personal Details</h3>
 
       {/* Radio buttons and yes/no toggles */}
       <div className="grid grid-cols-2 gap-x-6 text-sm text-gray-800">
         <div className="flex justify-between items-center py-2 border-b">
           <span className="text-gray-700 font-medium">Marital Status</span>
           <div className="flex gap-4">
-            <label><input type="radio" name="marital" defaultChecked /> Single</label>
-            <label><input type="radio" name="marital" /> Married</label>
+            <span>Single</span>
           </div>
         </div>
 

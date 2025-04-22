@@ -1,84 +1,135 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
+import {useNavigate} from "react-router-dom";
+import {MIT, mitaoe, mitbuilding, qr} from "../images";
+import {TfiReload} from "react-icons/tfi";
+import {FaEye, FaEyeSlash} from "react-icons/fa";
 
 function MITLoginPage() {
-  const [captcha, setCaptcha] = useState("");
-  const [userCaptcha, setUserCaptcha] = useState("");
+    const [captcha, setCaptcha] = useState("");
+    const [userCaptcha, setUserCaptcha] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
 
-  useEffect(() => {
-    generateCaptcha();
-  }, []);
+    const togglePassword = () => setShowPassword(!showPassword);
 
-  const generateCaptcha = () => {
-    const random = Math.floor(1000 + Math.random() * 9000).toString();
-    setCaptcha(random);
-  };
+    const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (userCaptcha !== captcha) {
-      alert("Captcha does not match!");
-      generateCaptcha();
-      return;
-    }
-    alert("Login successful (Captcha matched)");
-  };
+    useEffect(() => {
+        generateCaptcha();
+    }, []);
 
-  return (
-    <div className="min-h-screen flex">
-      {/* Left Side Image */}
-      <div className="w-2/3 relative hidden lg:block">
-        <img
-          src="/MIT-clg-img.jpg"
-          alt="MIT Building"
-          className="m-4 h-[96%] w-[99%] rounded-2xl object-cover object-center opacity-90"
-        />
-        <div className="m-4 absolute bottom-10 left-0 bg-blue-900 text-white px-8 py-4">
-          <h1 className="text-3xl font-bold">MIT</h1>
-          <p className="text-lg">Academy Of Engineering</p>
+    const generateCaptcha = () => {
+        const random = Math.floor(1000 + Math.random() * 9000).toString();
+        setCaptcha(random);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (userCaptcha !== captcha) {
+            alert("Captcha does not match!");
+            generateCaptcha();
+            return;
+        }
+
+        if ((username === "202101070082" || username === "202101070074" || username === "202101040253" || username === "202101040257") && password === "hci") {
+            navigate("/Dashboard");
+        } else {
+            alert("Invalid username or password!");
+        }
+    };
+
+    return (
+        <div className="min-h-screen flex">
+            {/* Left Side Image */}
+            <div className="w-[70.5%] relative hidden lg:block">
+                <img
+                    src={mitbuilding}
+                    alt="MIT Building"
+                    className="m-4 h-[94%] w-full bg-[#07768e]/30 rounded-2xl object-center opacity-90"
+                />
+              <div className="absolute m-4 h-[94%] w-full inset-0 bg-[#07768e]/30 rounded-2xl"></div>
+                <div className="m-4 text-left absolute bottom-28 left-0 bg-[#141d49] text-white px-3 py-4">
+                    <h1 className="text-3xl font-bold">MIT</h1>
+                    <p className="text-xl">Academy Of Engineering</p>
+                </div>
+            </div>
+
+            {/* Right Side Form */}
+            <div className="w-full lg:w-[29.5%] bg-white p-8 px-16 flex flex-col justify-center">
+                <div className="text-center mb-5">
+                    <img
+                        src={mitaoe}
+                        alt="MIT Building"
+                        className=""
+                    />
+                    <p className="text-sm mt-1 text-[#141d49]">Alandi Road, Pune - 412 105, Maharashtra (India)</p>
+                </div>
+
+                <p className="text-lg font-bold mb-4 text-left text-[#212529]">Sign In</p>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="User Name"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        className="w-full border p-2 rounded shadow-sm"
+                    />
+                    <div className={'relative'}>
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="w-full border p-2 rounded shadow-sm"
+                            placeholder="Password"
+                        />
+                        <button
+                            type="button"
+                            onClick={togglePassword}
+                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
+                        >
+                            {showPassword ? <FaEye /> : <FaEyeSlash />}
+                        </button>
+                    </div>
+
+                    <div className="flex items-center space-x-2">
+                        <button type="button" onClick={generateCaptcha} className="text-2xl text-blue-600"><TfiReload
+                            className={'scale-x-[-1] text-black text-xl rotate-[150deg] font-bold'}/></button>
+                        <span className="text-3xl text-[#141d49] font-bold tracking-widest">{captcha}</span>
+                        <input
+                            type="text"
+                            placeholder="Captcha"
+                            value={userCaptcha}
+                            onChange={(e) => setUserCaptcha(e.target.value)}
+                            className="flex-1 w-max border p-2 rounded shadow-sm"
+                        />
+                    </div>
+
+                    <button type="submit" className="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800">Sign
+                        In
+                    </button>
+
+                    <button type="button"
+                            className="w-full border border-blue-600 flex justify-center items-center py-1 rounded hover:bg-gray-100">
+                        <span className={'font-semibold text-lg'}>G</span><span className="mr-2"></span> Continue With
+                        Google
+                    </button>
+
+                    <div className="text-center">
+                        <a href="#" className="text-sm text-blue-600 hover:underline">Forgot Password / UserName</a>
+                    </div>
+
+                    <div className="flex justify-between items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                             alt="Google Play" className="h-10"/>
+                        <img src={qr} alt="QR Code" className="h-14"/>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
-
-      {/* Right Side Form */}
-      <div className="w-full lg:w-1/3 bg-white p-8 flex flex-col justify-center">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-blue-900">MIT | <span className="font-normal text-black">Academy of Engineering</span></h2>
-          <p className="text-xs text-gray-500">(An Autonomous Institute Affiliated to Savitribai Phule Pune University)</p>
-          <p className="text-sm mt-1">Alandi Road, Pune - 412 105, Maharashtra (India)</p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input type="text" placeholder="User Name" className="w-full border p-2 rounded shadow-sm" />
-          <input type="password" placeholder="Password" className="w-full border p-2 rounded shadow-sm" />
-          <div className="flex items-center space-x-2">
-          <button type="button" onClick={generateCaptcha} className="text-sm text-blue-600 underline">↻</button>
-            <span className="text-xl font-bold tracking-widest">{captcha}</span>
-            <input
-              type="text"
-              placeholder="Captcha"
-              value={userCaptcha}
-              onChange={(e) => setUserCaptcha(e.target.value)}
-              className="flex-1 border p-2 rounded shadow-sm"
-            />
-          </div>
-
-          <button type="submit" className="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800">Sign In</button>
-
-          <button type="button" className="w-full border flex justify-center items-center py-2 rounded hover:bg-gray-100">
-            <span className="mr-2"></span> Continue With Google
-          </button>
-
-          <div className="text-center">
-            <a href="#" className="text-sm text-blue-700 hover:underline">Forgot Password / UserName</a>
-          </div>
-
-          <div className="flex justify-center items-center mt-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-10" />
-            <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fplay.google.com%2Fstore&chs=180x180&choe=UTF-8&chld=L|2" alt="QR Code" className="h-16 ml-4" />
-          </div>
-        </form>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default MITLoginPage;

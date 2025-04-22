@@ -1,48 +1,64 @@
 import React from "react";
 import timeTableData from "./timetable.json";
+import { TfiReload } from "react-icons/tfi";
 
 const ClassTimeTable = () => {
-  return (
-    <div className="m-7 p-3 w-7/12 font-sans h-[300px] bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden">
-      <h3 className="text-lg font-bold mb-2 pl-1 text-left">Class Time Table</h3>
-      <div className="overflow-y-auto flex-grow relative border border-gray-400">
-        <table className="w-full border-collapse min-w-[700px]">
-          <thead>
-            <tr className="">
-              <th className="sticky top-0 bg-gray-100 z-[4] font-bold text-left pl-2 shadow-md border border-gray-300 px-3 py-2">Time/Day</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Monday</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Tuesday</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Wednesday</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Thursday</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Friday</th>
-              <th className="sticky top-0 bg-gray-100 z-[2] font-bold border border-gray-300 px-3 py-2">Saturday</th>
-            </tr>
-          </thead>
-          <tbody>
-            {timeTableData.map((row, index) => (
-              <tr key={index}>
-                <td className="sticky left-0 bg-gray-100 z-[3] font-bold text-left pl-2 shadow-md border border-gray-300 px-3 py-2">
-                  {row.time}
-                </td>
-                {row.days.map((subject, i) => (
-                  <td
-                    key={i}
-                    className="text-center text-sm border border-gray-300 px-3 py-2 min-w-[100px] h-[50px] box-border"
-                  >
-                    {subject}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
+    const hasSchedule = timeTableData && timeTableData.length > 0;
+
+    return (
+        <div className="m-1.5 p-3 w-[800px] font-sans h-[270px] bg-white rounded-xl shadow-md flex flex-col overflow-hidden">
+            <div className="flex justify-between">
+                <h3 className="text-lg font-bold mb-2 pl-1 text-left">Class Time Table</h3>
+                <button type="button" className="text-xs text-blue-600">
+                    <TfiReload className="scale-x-[-1] text-black text-sm rotate-[150deg] font-bold" />
+                </button>
+            </div>
+            <hr className="mb-3 h-[1px] border-none bg-gray-300" />
+            <div className="overflow-y-auto flex-grow relative custom-scrollbar">
+                <table className="w-full text-xs border-separate border-spacing-x-0.5 border-spacing-y-0.5">
+                    <thead>
+                    <tr>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold text-left border-b-2 border-b-blue-500 py-1 px-2">Time/Day</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-b-red-500 py-1 px-2">Monday</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-b-orange-500 px-2 py-1">Tuesday</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-violet-500 px-2 py-1">Wednesday</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-b-blue-500 py-1 px-2">Thursday</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-b-red-500 py-1 px-2">Friday</th>
+                        <th className="sticky top-0 bg-gray-100 z-[2] font-bold border-b-2 border-b-orange-500 px-2 py-1">Saturday</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {hasSchedule ? (
+                        timeTableData.map((row, index) => (
+                            <tr key={index} className="rounded-xl">
+                                <td className="sticky left-0 bg-gray-100 font-semibold text-left px-2 py-1">
+                                    {row.time}
+                                </td>
+                                {row.days.map((subject, i) => (
+                                    <td
+                                        key={i}
+                                        className="text-center text-xs bg-gray-50 px-2 py-1 box-border"
+                                    >
+                                        {subject}
+                                    </td>
+                                ))}
+                            </tr>
+                        ))
+                    ) : (
+                        <tr>
+                            <td colSpan="7" className="text-center text-gray-600 py-4">
+                                No timetable data available.
+                            </td>
+                        </tr>
+                    )}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
 };
 
 export default ClassTimeTable;
-
 
 // import React from "react";
 // // import { FiRefreshCw } from "react-icons/fi";

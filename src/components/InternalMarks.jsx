@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StudentInfoCard from './StudentInfoCard';
 
-const InternalMarksContainer = () => {
+const InternalMarksContainer = ({navbarColor = "#5864bd"}) => {
   const [selected, setSelected] = useState(null);
 
   const internalMarksData = [
@@ -33,7 +33,7 @@ const InternalMarksContainer = () => {
 
   return (
     <div className="bg-white p-4 rounded-xl mb-6">
-      <h3 className="text-lg font-semibold mb-4">Internal Marks</h3>
+      <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>Internal Marks</h3>
 
       {/* Table Headings */}
       <div className="grid grid-cols-[1fr_1fr_2fr] font-semibold text-gray-600 border-b mb-2">
@@ -50,7 +50,7 @@ const InternalMarksContainer = () => {
             className="grid grid-cols-[1fr_1fr_2fr] text-sm text-gray-800 items-center px-3 py-3 bg-gray-50 hover:bg-gray-100 rounded-md shadow-sm mb-2 transition cursor-pointer"
             onClick={() => setSelected(item)}
           >
-            <div className="text-blue-600 underline">{item.code}</div>
+            <div className="underline" style={{color: navbarColor}}>{item.code}</div>
             <div>{item.session}</div>
             <div>{item.name}</div>
           </div>
@@ -106,11 +106,11 @@ const InternalMarksContainer = () => {
   );
 };
 
-const InternalMarks = () => {
+const InternalMarks = ({navbarColor = "#5864bd"}) => {
     return (
         <div className="max-w-[1200px] bg-white rounded-xl shadow-xl overflow-hidden font-sans">
           <StudentInfoCard />
-          <InternalMarksContainer />
+          <InternalMarksContainer navbarColor={navbarColor} />
         </div>
       );
 }

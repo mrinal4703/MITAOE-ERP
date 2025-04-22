@@ -4,21 +4,21 @@ import FatherDetails from './FatherDetails';
 import MotherDetails from './MotherDetails';
 import StudentInfoCard from '../StudentInfoCard';
 
-const PersonalDetailsPageContainer = () => {
+const PersonalDetailsPageContainer = ({navbarColor = "#5864bd"}) => {
   return (
     <div className="space-y-6">
-      <StudentPersonalDetails />
-      <FatherDetails />
-      <MotherDetails />
+      <StudentPersonalDetails navbarColor={navbarColor} />
+      <FatherDetails navbarColor={navbarColor} />
+      <MotherDetails navbarColor={navbarColor} />
     </div>
   );
 };
 
-const PersonalDetailsPage = () =>{
+const PersonalDetailsPage = ({navbarColor = "#5864bd"}) =>{
     return (
         <div className="max-w-[1200px] bg-white rounded-xl shadow-xl overflow-hidden font-sans">
           <StudentInfoCard />
-          <PersonalDetailsPageContainer />
+          <PersonalDetailsPageContainer navbarColor={navbarColor} />
         </div>
       );
 }

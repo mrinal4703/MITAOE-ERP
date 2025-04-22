@@ -6,20 +6,20 @@ import StudentInfoCard from '../StudentInfoCard';
 
 
 
-function QualificationDetailsContainer() {
+function QualificationDetailsContainer({navbarColor = "#5864bd"}) {
     return (
         <div>
-          <SecondaryMarks />
-          <HigherSecondaryMarks />
-          <EntranceExamScores />
+          <SecondaryMarks navbarColor={navbarColor} />
+          <HigherSecondaryMarks navbarColor={navbarColor} />
+          <EntranceExamScores navbarColor={navbarColor} />
         </div>
       );
 }
-function QualificationDetails(){
+function QualificationDetails({navbarColor = "#5864bd"}){
     return (
         <div className="max-w-[1200px] bg-white rounded-xl shadow-xl overflow-hidden font-sans">
           <StudentInfoCard />
-          <QualificationDetailsContainer />
+          <QualificationDetailsContainer navbarColor={navbarColor} />
         </div>
       );
 }

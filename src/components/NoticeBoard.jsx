@@ -10,7 +10,7 @@ const NoticeBoard = () => {
   );
 
   return (
-    <div className="p-4 bg-white rounded-xl shadow-md font-sans h-full overflow-y-auto flex flex-col justify-start w-full max-w-[1000px]">
+    <div className="m-1.5 p-4 bg-white rounded-xl shadow-md font-sans h-[270px] overflow-y-auto flex flex-col justify-start w-full">
       <div className="flex justify-between font-bold pb-2 border-b border-gray-300 mb-2">
         <span
           className={`mx-3 cursor-pointer transition-colors duration-200 ${activeTab === "active" ? "text-green-600" : "text-black"}`}

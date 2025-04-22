@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PermanentAddress = () => {
+const PermanentAddress = ({navbarColor = "#5864bd"}) => {
   const data = [
     ['Address Details', '123, Galaxy Apartment, Ring Road'],
     ['State', 'Maharashtra'],
@@ -17,7 +17,7 @@ const PermanentAddress = () => {
 
   return (
     <div className="bg-white p-6 rounded-xl  mb-6">
-      <h3 className="text-lg font-semibold mb-4 border-l-4 border-blue-600 pl-2">Permanent Address</h3>
+      <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>Permanent Address</h3>
       <div className="grid grid-cols-2 gap-x-6 text-sm text-gray-800">
         {data.map(([label, value], idx) => (
           <div key={idx} className="col-span-1 flex justify-between items-center py-2 border-b">

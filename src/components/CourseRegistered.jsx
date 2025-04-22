@@ -2,7 +2,7 @@ import React from 'react'
 import StudentInfoCard from './StudentInfoCard';
 
 
-function CourseRegisteredContainer() {
+function CourseRegisteredContainer({navbarColor = "#5864bd"}) {
     const courses = [
       {
         code: 'CS480L',
@@ -76,8 +76,8 @@ function CourseRegisteredContainer() {
       <div className="bg-white p-4 rounded-xl shadow mb-6 relative">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
-          <h3 className="text-lg font-semibold">Course Details</h3>
-          <button className="px-3 py-1 border border-blue-500 text-blue-600 rounded hover:bg-blue-50 text-sm">
+          <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>Course Details</h3>
+          <button className="px-3 py-1 border rounded hover:bg-blue-50 text-sm" style={{borderColor: navbarColor, color: navbarColor}} >
             Registration Slip
           </button>
         </div>
@@ -102,7 +102,7 @@ function CourseRegisteredContainer() {
               key={index}
               className="grid grid-cols-[1.3fr_1fr_2fr_1.5fr_2fr_1fr_2fr_2fr_1fr] text-sm text-gray-800 bg-gray-50 rounded-md shadow-sm px-3 py-2 mb-2"
             >
-              <div className="text-blue-600 underline">{item.code}</div>
+              <div className="underline" style={{color: navbarColor}}>{item.code}</div>
               <div>{item.sem}</div>
               <div>{item.name}</div>
               <div>{item.type}</div>
@@ -126,11 +126,11 @@ function CourseRegisteredContainer() {
     );
   };
 
-function CourseRegistered(){
+function CourseRegistered({navbarColor = "#5864bd"}){
     return (
         <div className="max-w-[1200px] bg-white rounded-xl shadow-xl overflow-hidden font-sans">
           <StudentInfoCard />
-          <CourseRegisteredContainer />
+          <CourseRegisteredContainer navbarColor={navbarColor} />
         </div>
       );
 }

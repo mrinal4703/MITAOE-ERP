@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HigherSecondaryMarks = () => {
+const HigherSecondaryMarks = ({navbarColor = "#5864bd"}) => {
   const data = [
     ['School/College Name', 'Modern Jr. College'],
     ['Year of Exam', '2021'],
@@ -16,7 +16,7 @@ const HigherSecondaryMarks = () => {
 
   return (
     <div className="bg-white p-6 rounded-xl  mb-6">
-      <h3 className="text-lg font-semibold mb-4 border-l-4 border-blue-600 pl-2">
+      <h3 className="text-lg text-left font-semibold mb-4 border-l-4 pl-2" style={{borderColor: navbarColor}}>
         Higher Secondary / 12th Marks / Diploma Marks
       </h3>
 
