@@ -6,7 +6,7 @@ const SideBarStudentDetails = ({navbarColor = "#5864bd"}) => {
         {key: "onlinePayment", label: "Online Payment", path: "/StudentRelated"},
         {key: "onlinePaymentHostel", label: "Online Payment Hostel", path: "#"},
         {key: "completeDetail", label: "Student Complete Detail", path: "/StudentCompleteDetail"},
-        {key: "information", label: "Student Information", path: "#"},
+        {key: "information", label: "Student Information", path: "/StudentInformation"},
         {key: "course", label: "Course Registration", path: "#"},
     ];
 

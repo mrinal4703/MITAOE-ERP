@@ -190,6 +190,7 @@ import InfoPanel from "./components/InfoPanel";
 import ExamDashboard from "./components/Examination/ExamDashboard";
 import {HiMiniLink} from "react-icons/hi2";
 import LinksPanel from "./components/LinksPanel";
+import StudentForm from "./components/StudentForm";
 
 function InnerApp({
                       dark, setDark,
@@ -272,6 +273,7 @@ function InnerApp({
                 <Route path="/StudentRelated" element={<><NavBar navbarColor={navbarColor} /><StudentRelatedDashboard navbarColor={navbarColor} /><Footer navbarColor={navbarColor} /></>} />
                 <Route path="/AcademicFeedback" element={<><NavBar navbarColor={navbarColor} /><FeedbackDashboard navbarColor={navbarColor} /><Footer navbarColor={navbarColor} /></>} />
                 <Route path="/ExamStudentRelated" element={<><NavBar navbarColor={navbarColor} /><ExamDashboard navbarColor={navbarColor} /><Footer navbarColor={navbarColor} /></>} />
+                <Route path="/StudentInformation" element={<><NavBar navbarColor={navbarColor} /><StudentForm navbarColor={navbarColor} /><Footer navbarColor={navbarColor} /></>} />
             </Routes>
         </div>
     );
