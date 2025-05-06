@@ -27,15 +27,15 @@ const MarksDetailsContainer = ({navbarColor = "#5864bd"}) => {
     ];
 
     const handleDownload = () => {
-        const worksheet = XLSX.utils.json_to_sheet(data);
-        const workbook = XLSX.utils.book_new();
-
-        XLSX.utils.book_append_sheet(workbook, worksheet, 'Marks Details');
-
-        const excelBuffer = XLSX.write(workbook, {bookType: 'xlsx', type: 'array'});
-        const file = new Blob([excelBuffer], {type: 'application/octet-stream'});
-
-        saveAs(file, 'Marks_Details.xlsx');
+        // const worksheet = XLSX.utils.json_to_sheet(data);
+        // const workbook = XLSX.utils.book_new();
+        //
+        // XLSX.utils.book_append_sheet(workbook, worksheet, 'Marks Details');
+        //
+        // const excelBuffer = XLSX.write(workbook, {bookType: 'xlsx', type: 'array'});
+        // const file = new Blob([excelBuffer], {type: 'application/octet-stream'});
+        //
+        // saveAs(file, 'Marks_Details.xlsx');
     };
 
     return (
