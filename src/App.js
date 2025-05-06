@@ -293,6 +293,7 @@ function App() {
     }, [dark]);
 
     return (
+        <>
         <Router>
             <InnerApp
                 dark={dark}
@@ -309,6 +310,7 @@ function App() {
                 setShowPanel3={setShowPanel3}
             />
         </Router>
+        </>
     );
 }
 

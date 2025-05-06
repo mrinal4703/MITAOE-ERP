@@ -44,6 +44,8 @@ function MITLoginPage() {
 
     return (
         <div className="min-h-screen flex">
+            <div className={'fixed top-2 left-2 z-50 px-2 py-3 w-64 bg-gray-200 border-2 border-black rounded shadow-md'}>⚠️ This is a front-end-only educational demo. No real login, passwords, or personal data are used or stored.
+                This is NOT affiliated with MITAOE or any official institution.</div>
             {/* Left Side Image */}
             <div className="w-[70.5%] relative hidden lg:block">
                 <img
