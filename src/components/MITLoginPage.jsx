@@ -26,6 +26,8 @@ function MITLoginPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const validUsers = ["202101070082", "admin", "202101070074", "202101040253", "202101040257"];
+        const correctPassword = atob("aGNp");
 
         if (userCaptcha !== captcha) {
             alert("Captcha does not match!");
@@ -33,7 +35,7 @@ function MITLoginPage() {
             return;
         }
 
-        if ((username === "202101070082" || username === "202101070074" || username === "202101040253" || username === "202101040257") && password === "hci") {
+        if (validUsers.includes(username) && password === correctPassword) {
             navigate("/Dashboard");
         } else {
             alert("Invalid username or password!");
@@ -72,7 +74,7 @@ function MITLoginPage() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="text"
-                        placeholder="User Name"
+                        placeholder="User Name ('202101070082' is dummy)"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         className="w-full border p-2 rounded shadow-sm"
@@ -83,7 +85,7 @@ function MITLoginPage() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="w-full border p-2 rounded shadow-sm"
-                            placeholder="Password"
+                            placeholder="Password (the dummy is 'hci')"
                         />
                         <button
                             type="button"
